@@ -22,6 +22,7 @@ int main(){
 
 	fillArray(a, size);
 
+	cout << "Unsorted elements: " << endl;
 	printArray(a,size);
 
 	start = clock();
@@ -30,6 +31,7 @@ int main(){
 
 	end = clock();
 
+	cout << "Sorted elements: " << endl;
 	printArray(a, size);
 
 	timeElapsed = ((double) (end - start)) / CLOCKS_PER_SEC;
